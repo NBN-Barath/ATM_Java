@@ -11,6 +11,6 @@ public class Transaction {
 
     @Override
     public String toString() { // Override method
-        return "Transaction of user="+user+" type='" + type + "'||" + " Amount=" + amount;
+        return "Transaction of user = "+user+" type = '" + type + "'||" + " Amount=" + amount;
     }
 }

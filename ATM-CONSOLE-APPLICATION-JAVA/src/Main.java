@@ -1,5 +1,6 @@
-public class Main{
-    public static void main(String []args) {
-        BMS_Actions.start(); // call start method in BMS_start
+public class Main {
+    public static void main(String[] args) throws CloneNotSupportedException{
+        ATM_Action atm_action = new ATM_Action();
+        atm_action.start();// call the start method in ATM
     }
 }

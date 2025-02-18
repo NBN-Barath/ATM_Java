@@ -1,19 +1,17 @@
 import java.util.ArrayList;
 
-public class Account {
-    private String accountId;
-    private String pin;
-    private ArrayList<Transaction> transactions = new ArrayList<>();
+public abstract class Account {
+    protected String accountId; // Variable to store account id
+    protected String pin; // Variable to store the account pin
+    protected ArrayList<Transaction> transactions; // ArrayList to store the transaction of the account
 
-    public Account(String accountId, String pin) { // Constructor to store accountId and pin
+    public Account(String accountId, String pin) { // Constructor to store accountId,pin and transaction
         this.accountId = accountId;
         this.pin = pin;
         this.transactions = new ArrayList<>();
     }
 
-    public Account() {}
 
-    // Getters and Setters
     public String getId() {
         return accountId;
     }
@@ -25,14 +23,11 @@ public class Account {
     public void setPin(String pin) {
         this.pin = pin;
     }
-
     public ArrayList<Transaction> getTransactions() {
         return transactions;
     }
 
     public void addTransaction(Transaction transaction) {
-       this.transactions.add(transaction);
+        this.transactions.add(transaction);
     }
-
-
 }

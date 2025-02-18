@@ -1,22 +1,17 @@
-class User extends Account
-{
-    private double balance;// Store user balance amount
+import java.util.ArrayList;
+
+class User extends Account {
+    private double balance; // Store user balance amount
 
     public User(String userId, String userPin) { // Constructor
-        super(userId,userPin);
+        super(userId, userPin);
     }
 
-    public User() {} // Default Constructor
+    public double getBalance() { // User balance getter
+        return balance;
+    }
 
-    // getters and setters
-
-    public double getBalance() { // user balance getter
-            return balance;
-        }
-
-        public void setBalance(double balance) { // user balance setter
+    public void setBalance(double balance) { // User balance setter
         this.balance = balance;
     }
-
-
 }
