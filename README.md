@@ -58,6 +58,11 @@ Welcome to the **ATM Management System** project! This Java-based application si
 
 ---
 
+## Console Output Recording
+https://github.com/user-attachments/assets/ecad84d7-149d-4fe4-a5ac-ebdfecac2e41
+
+
+
 ## Contribution Guidelines
 
 We welcome contributions! Please follow these steps:
